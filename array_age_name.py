@@ -1,7 +1,9 @@
 #ask user to input their name and age
-def hasNumbers(inputString):
-  return any(char.isdigit() for char in inputString)
+def numbers(string):
+  return any(char.isdigit() for char in string)
 while True:
   name = input("pangalan mo baks: ")
-  if hasNumbers(name):
+  if numbers(name):
     print ("baks omayus ka, ulet!")
+  else:
+    age = int(input("edad mo baks: "))
