@@ -1,4 +1,6 @@
-#ask user to input their name and age
+#set array
+fersons = {}
+#ask user to enter name and age
 def numbers(string):
   return any(char.isdigit() for char in string)
 while True:
@@ -13,5 +15,15 @@ while True:
                break
         except ValueError:
             print ("hoi omayus k sabeh")
-            if break:
-               print ("maglagay k pa bah, pahgud n q")
+
+  while True:
+    new_entry = input("pahgud na q, lalagay k p bah? (ril or fik): ").strip().lower()
+    if new_entry == "ril":
+        break 
+    elif new_entry == "fik":
+        break
+        print ("ay sige")
+    else:
+       print("hoi baks mali, nanggigigil n qohhh")
+     
+   
