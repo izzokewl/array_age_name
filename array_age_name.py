@@ -1,5 +1,3 @@
-#set array
-fersons = {}
 #ask user to enter name and age
 def numbers(string):
   return any(char.isdigit() for char in string)
@@ -15,6 +13,9 @@ while True:
                break
         except ValueError:
             print ("hoi omayus k sabeh")
+           
+  [fersons] = {"age":age}
+
 #ask user if inserting new entry
   while True:
     new_entry = input("pahgud na q, lalagay k p bah? (ril or fik): ").strip().lower()
@@ -25,8 +26,6 @@ while True:
         exit()
     else:
        print("hoi baks mali, nanggigigil n qohhh")
-    #store names for array
-  fersons.append((name, age))
 
 
      
