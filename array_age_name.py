@@ -6,7 +6,12 @@ while True:
   if numbers(name):
     print ("baks omayus ka, ulet!")
   else:
-      try:
-        age = int(input("edad mo baks: "))
-      except ValueError:
-        print ("hoi omayus k sabeh")
+      while True:
+        try:
+            age = int(input("edad mo baks: "))
+            if age>0:
+               break
+        except ValueError:
+            print ("hoi omayus k sabeh")
+            if break:
+               print ("maglagay k pa bah, pahgud n q")
