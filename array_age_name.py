@@ -15,15 +15,19 @@ while True:
                break
         except ValueError:
             print ("hoi omayus k sabeh")
-
+#ask user if inserting new entry
   while True:
     new_entry = input("pahgud na q, lalagay k p bah? (ril or fik): ").strip().lower()
     if new_entry == "ril":
         break 
     elif new_entry == "fik":
-        break
         print ("ay sige")
+        exit()
     else:
        print("hoi baks mali, nanggigigil n qohhh")
+    #store names for array
+  fersons.append((name, age))
+
+
      
    
